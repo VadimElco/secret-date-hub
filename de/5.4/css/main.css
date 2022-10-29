@@ -1,0 +1,164 @@
+#secondDiv,#thirdDiv {
+    display: none
+}
+
+body {
+    color: #414f57;
+    line-height: 2;
+    letter-spacing: .2em;
+    font-family: verdana, serif
+}
+
+.logo {
+    text-align: center;
+    margin: 0 0 0 10px
+}
+
+.logo img {
+    width: 15%
+}
+
+#main {
+    position: relative;
+    max-width: 100%;
+    padding: 0 2em 3em;
+    background: #fff;
+    border-radius: 4px;
+    cursor: default;
+    text-align: center
+}
+
+#main .avatar img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    box-shadow: 0 0 0 .35em#000000
+}
+
+button {
+    line-height: 2.75em;
+    padding: 0 1.5em;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #ffd800;
+    border-radius: 4px;
+    border: solid 3px#1f0d05;
+    color: #06141c!important;
+    cursor: pointer;
+    text-align: center
+}
+
+h1 {
+    letter-spacing: .22em;
+    color: #143b4f;
+    line-height: 1.5;
+    font-size: 14pt;
+    margin: 20px 0 0
+}
+
+p {
+    font-size: 13px
+}
+
+@media screen and (min-width: 300px) {
+    .logo img {
+        width:250px;
+        margin: 15px 0
+    }
+
+    #main .avatar img {
+        width: 140px
+    }
+
+    button {
+        font-size: 18px
+    }
+}
+
+@media screen and (min-width: 400px) and (min-height:800px) {
+    #main .avatar img {
+        width:100%
+    }
+}
+
+@media screen and (min-height: 800px) {
+    .logo img {
+        width:70px
+    }
+
+    #main .avatar img {
+        width: 100px
+    }
+
+    h1 {
+        font-size: 15pt
+    }
+
+    p {
+        font-size: 15px
+    }
+
+    button {
+        font-size: 15px
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .logo img {
+        width:50%
+    }
+
+    #main .avatar img {
+        width: 60px
+    }
+
+    h1 {
+        font-size: 20pt
+    }
+
+    p {
+        font-size: 25px
+    }
+
+    button {
+        font-size: 20px
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size:30pt
+    }
+
+    p {
+        font-size: 25pt
+    }
+
+    button {
+        font-size: 25pt
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #main .avatar img {
+        width:18%
+    }
+
+    h1 {
+        font-size: 15pt
+    }
+
+    p {
+        font-size: 15pt;
+        margin: 0
+    }
+
+    button {
+        font-size: 15pt
+    }
+
+    .logo img {
+        width: 20%
+    }
+}

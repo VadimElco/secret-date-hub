@@ -1,0 +1,1 @@
+$(document).ready(function(){$('.show_hide').showHide({speed:400,easing:'',changeText:1,showText:'View',hideText:''});});

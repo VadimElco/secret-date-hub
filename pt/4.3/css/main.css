@@ -1,0 +1,399 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*font-size: 100%;*/
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block
+}
+
+body {
+    line-height: 1;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+ol,ul {
+    list-style: none
+}
+
+blockquote,q {
+    quotes: none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    /*content: '';*/
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.clearfix {
+    display: inline-block
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden
+}
+
+.clearfix {
+    display: block
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    transition: background 1s ease
+}
+
+.wrapper {
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: #177070;
+    display: none;
+    color: #fff
+}
+
+h1 {
+    font-size: 1.45em;
+    padding: 10px 5px;
+    background-color: #ff7db5;
+    text-transform: uppercase;
+    border-bottom: solid 1px #ccc;
+    color: #fff
+}
+
+.nudepics {
+    padding: 15px 25px;
+    line-height: 22px;
+    font-size: 1.3em
+}
+
+.please {
+    padding: 0 25px 20px;
+    font-weight: 700;
+    font-size: 1.5em
+}
+
+.modal img {
+    max-width: 480px;
+    width: 100%
+}
+
+.no-button {
+    background-color: #d00057!important
+}
+
+.no-button:hover {
+    background-color: #a50045!important
+}
+
+input[type=button] {
+    background-color: #ff006b;
+    color: #efff00;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 1.75em;
+    margin: 25px auto 0;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: .8s ease;
+    border: 0
+}
+
+input[type=button]:hover {
+    background-color: #ff7db5
+}
+
+.cta {
+    background-color: #ff006b;
+    color: #efff00;
+    font-weight: 700;
+    border: 0;
+    /*display: inline-block;*/
+    font-size: 1.75em;
+    margin: 10px auto 0;
+    padding: 15px 0;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    transition: .8s ease
+}
+
+.cta:hover {
+    background-color: #ff7db5
+}
+
+.modal input[type=button] {
+    width: 100%
+}
+
+#q2 input[type=button] {
+    width: 100%;
+    margin: 0
+}
+
+#q2 .toptxt {
+    padding: 20px 25px;
+    font-size: 1.1em;
+    line-height: 20px
+}
+
+#q2 .bottxt {
+    padding: 20px 25px;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 1.1em
+}
+
+#q2 .question {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    background-color: #333;
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 24px;
+    border-top: solid 1px #fff;
+    color: #fff
+}
+
+.q .question {
+    font-size: 1.5em;
+    line-height: 24px;
+    padding: 10px 15px 0
+}
+
+.q .small {
+    font-size: .9em;
+    font-style: italic;
+    padding: 5px 0
+}
+
+.q input[type=button] {
+    margin-top: 25px;
+    width: 100%
+}
+
+.q input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px
+}
+
+#q2,#q3,#q4,#q5,#q6,#loading,.finaltxt,#final,#q7,#q8 {
+    display: none
+}
+
+.answer {
+    display: block;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #114e4e;
+    padding: 15px 5px 15px 55px;
+    background-image: url(../images/check.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    font-size: 1.5em;
+    font-weight: 700;
+    width: 98%;
+    margin: 4px auto 0;
+    text-align: left
+}
+
+.selected {
+    background-image: url(../images/check_hover.png)
+}
+
+.loading {
+    font-size: 1.2em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 24px;
+    padding: 5px;
+    color: #111
+}
+.loading p {
+    display: none;
+    margin-bottom: 30px;
+}
+.outer {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2px;
+    height: 18px;
+    width: 260px;
+    margin: 0 auto;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    background: #3f454b;
+    background: -moz-linear-gradient(top,#3f454b 0%,#1b1d21 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#3f454b),color-stop(100%,#1b1d21));
+    background: -webkit-linear-gradient(top,#3f454b 0%,#1b1d21 100%);
+    background: -o-linear-gradient(top,#3f454b 0%,#1b1d21 100%);
+    background: -ms-linear-gradient(top,#3f454b 0%,#1b1d21 100%);
+    background: linear-gradient(to bottom,#3f454b 0%,#1b1d21 100%)
+}
+
+.inner {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0 1px 0 0 rgba(255,255,255,.5);
+    -moz-box-shadow: inset 0 1px 0 0 rgba(255,255,255,.5);
+    box-shadow: inset 0 1px 0 0 rgba(255,255,255,.5);
+    border-bottom: 1px solid #03112f;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    height: 14px;
+    width: 0;
+    background: #ff006b;
+    background: -moz-linear-gradient(top,#ff006b 0%,#ff006b 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ff006b),color-stop(100%,#ff006b));
+    background: -webkit-linear-gradient(top,#ff006b 0%,#ff006b 100%);
+    background: -o-linear-gradient(top,#ff006b 0%,#ff006b 100%);
+    background: -ms-linear-gradient(top,#ff006b 0%,#ff006b 100%);
+    background: linear-gradient(to bottom,#ff006b 0%,#ff006b 100%)
+}
+
+.finaltxt {
+    line-height: 22px;
+    font-size: 1.25em;
+    color: #111
+}
+
+#loading {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.agree {
+    padding: 10px 15px;
+    line-height: 24px;
+    font-size: 1.4em
+}
+
+.rules {
+    font-size: 1.15em;
+    line-height: 18px;
+    font-weight: 700;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #ccc;
+    padding: 15px 25px;
+    width: 96%;
+    margin: 4px auto 0;
+    text-align: left;
+    color: #333
+}
+
+.bold {
+    font-weight: 700
+}
+
+#preloader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #177070;
+    margin: 0
+}
+
+#status img {
+    margin: 50px auto 0;
+    display: block;
+}
+
+#myProgress {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    background: #33373D;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#myBar {
+    width: 1%;
+    height: 15px;
+    background-color: #ff006b;
+    border-radius: 100px
+}
+
+#mailing {
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.banner_text {
+    padding: 0 25px 15px;
+    line-height: 22px;
+    font-size: 1.3em
+}
+
+.email_under_title>p {
+    font-size: 20px;
+    color: #000
+}
+
+.email-submit {
+    background-color: #ff006b;
+    color: #efff00;
+    font-weight: 700;
+    border: 0;
+    /*display: inline-block;*/
+    font-size: 1.75em;
+    margin: 10px auto 0;
+    padding: 15px 0;
+    text-decoration: none;
+    display: block;
+    width: 93%;
+    cursor: pointer;
+    transition: .8s ease
+}
+
+.textbox-email {
+    width: 90%;
+    padding: 5px;
+    font-size: 18px
+}
+
+@media screen and (max-width: 420px) {
+    #status img {
+        width:100%
+    }
+}

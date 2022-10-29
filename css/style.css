@@ -1,0 +1,165 @@
+/* Обнуление стелей CSS */
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+/* Пересчет ширины контентной области */
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+/* Дополнительные свойства обнуления */
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+a, a:visited {
+    text-decoration: none;
+    /*color: black;*/
+}
+a:hover {
+    text-decoration: none;
+    /*color: #41659f;*/
+}
+ul, li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+
+/*Подключение шрифтов*/
+.intro__content-left-h1 {
+    /*font-weight: 500;*/
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 115%;
+    color: #000;
+    font-family: Lobster, cursive;
+}
+.intro__content-left-h1 span {
+    color: #41659f
+}
+.title-h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 115%;
+    color: #000;
+    font-family: Lobster, cursive;
+}
+.title-h2_white {
+    color: #ffffff;
+}
+.title-h2_blue span {
+    color: #41659f;
+}
+/*Повторяющиеся элементы страницы*/
+.button {
+    padding: 11px 19px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.button_blue {
+    background:#41659f;
+}
+.button_black {
+    background:#000000;
+}
+.button_white {
+    background:#ffffff;
+    color: #000000;
+}
+.button_blue:hover {
+    background-color: rgba(54, 99, 165, 0.8);
+}
+.button_black:hover {
+    background-color: #444444;
+}
+.header, .intro, .about {
+    display: block;
+}
+.header__container, .intro__container,.about__container,
+.price__container, .courses__container,.faq__container,
+.footer__container {
+    max-width: 767px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/*[class*="__container"]*/
+
+/*Первый экран*/
+.header {
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    height: 153px;
+}
+.header__logo span {
+    position: relative;
+}
+.header__logo {
+    margin: 20% 0 auto;
+}
+.header__logo img {
+    width: 100%;
+    max-width: 278px;
+}
+.header__burger-button {
+    display: none;
+}
+.header__menu {
+    margin: 10% 0 auto;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+.menu__list {
+    display: block;
+    font-size: 20px;
+}
+.menu__item {
+    margin: 10px 40px 5px 0;
+    height: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700
+}
+.menu__item a {
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.menu__item a:hover {
+    color: #41659f;
+}
+.menu__sites-item {
+    margin-left: 50px;
+    background: url(../es/3.2_es/images/marker.png) 0 2px/15px no-repeat;
+    padding-left: 20px;
+    font-size: 16px;
+    height: 22px;
+}
+.intro__container {
+    display: flex;
+    padding-top: 180px;
+}
+
